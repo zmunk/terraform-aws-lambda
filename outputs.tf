@@ -17,3 +17,7 @@ output "log_group_name" {
   description = "The CloudWatch log group name of the Lambda Function"
   value       = aws_cloudwatch_log_group.lambda.name
 }
+
+output "role_name" {
+  value = aws_iam_role.lambda.name
+}
