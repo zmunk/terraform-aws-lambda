@@ -8,7 +8,7 @@ See https://registry.terraform.io/modules/terraform-aws-modules/lambda/aws/lates
 ```terraform
 resource "aws_lambda_function" "websocket_connect" {
   source  = "zmunk/lambda/aws"
-  version = "1.0.0"
+  version = "~> 1.0.0"
 
   function_name = "websocket_connect"
   description   = "Runs when a new client connects to websocket"
