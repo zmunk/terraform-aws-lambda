@@ -2,11 +2,13 @@
 
 Terraform module, to build and package AWS Lambda resources from local files.
 
-See https://registry.terraform.io/modules/terraform-aws-modules/lambda/aws/latest.
+[See terraform registry page](https://registry.terraform.io/modules/zmunk/lambda/aws/latest)
+
+[See official Terraform Lambda registry page](https://registry.terraform.io/modules/terraform-aws-modules/lambda/aws/latest.)
 
 ## Usage
 ```terraform
-resource "aws_lambda_function" "websocket_connect" {
+module "lambda_websocket_connect" {
   source  = "zmunk/lambda/aws"
   version = "~> 1.0.0"
 
